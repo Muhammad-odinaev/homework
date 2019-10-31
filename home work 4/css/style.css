@@ -1,0 +1,91 @@
+.nav {
+    width: 200px;
+    min-width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0; 
+    right: 0;
+    left: -200px;
+    padding: px px;
+    box-sizing: border-box;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition:left 0.3s;
+    background: #e27474;
+    padding-top: 40px;
+    z-index: 2000; 
+}
+.checkbox_type1 {
+    position: fixed;
+    top: 20px;
+    z-index: 3000;
+    left: 3px;
+}
+
+}
+.checkbox_type{
+    position: absolute;
+    left: 200px;
+    top: 1em;
+    padding: 0.5em;
+    background: inherit;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1;
+    z-index: 2001;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+#checkbox_type{
+    position: absolute;
+    display: none;
+
+}
+.checkbox_typeee{
+    text-align: center;
+}
+#checkbox_type{
+    left: auto;
+    right: 2px;
+    top: 1em;
+
+}
+#checkbox_type:checked ~ .nav {
+    left: 0;
+    box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+    overflow-y: auto;}
+    .nav > ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav > ul > li {
+        line-height: 2.5;
+        opacity: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+        -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+        -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+        transition: opacity .5s .1s, transform .5s .1s;
+    }
+    
+    #checkbox_type ~ .nav > ul > li {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+

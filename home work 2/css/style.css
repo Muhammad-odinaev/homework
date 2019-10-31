@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(71, 40, 36);
+}
+header {
+  /* border:1px solid silver; */
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  background-image: url(img/1png);
+}
+.top_menu {
+  /* border: 1px solid silver; */
+  display: flex;
+  width: 850px;
+  margin: 0 auto;
+  padding-left: 150px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header a {
+  text-decoration: none;
+  display: block;
+  color: rgb(4, 129, 187);
+}
+.top_menu > li {
+  margin-right: 30px;
+  position: relative;
+  display: inline-block;
+}
+.top_menu > li > a {
+  padding: 15px 10px;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.top_menu > li > a {
+  position: relative;
+  padding: 10px 15px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.pod_menu a:hover {
+  background: #1b0d0d;
+}
+.pod_menu {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 100%;
+  width: 85%;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: rgb(12, 207, 5)38);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(209, 18, 18, 0.6);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 1;
+  transform: translate(-50%, 20px);
+  transition: 0.2s;
+}
+
+.top_menu > li:hover .pod_menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.pod_menu a {
+  font-family: "Libre Baskerville", serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: 0.3s linear;
+}
+.glavn {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  color: rgb(7, 6, 12);
+  padding: 10px;
+  align-items: stretch;
+}
+.glavn p {
+  margin: 5px;
+  padding: 10px;
+}
+.chap {
+  border: 1px solid rgb(75, 75, 67);
+  font-size: 20px;
+  flex-grow: 1;
+}
+.glavn_2 {
+  border: 1px solid wheat;
+  font-size: 20px;
+  flex-grow: 2;
+}
+.rost {
+  border: 1px solid wheat;
+  font-size: 20px;
+  flex-grow: 1;
+}
+footer {
+  /* border: 1px solid silver; */
+  height: 80px;
+  width: 100%;
+}
+.chap h2 {
+  text-align: center;
+  margin: 0;
+}
+.glavn_2 h3 {
+  text-align: center;
+}
+.rost h3 {
+  text-align: center;
+}
